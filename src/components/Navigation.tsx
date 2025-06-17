@@ -1,5 +1,5 @@
 
-import { menu, x } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const Navigation = () => {
@@ -55,7 +55,7 @@ const Navigation = () => {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-700 hover:text-blue-600 p-2"
             >
-              {isMenuOpen ? <x size={24} /> : <menu size={24} />}
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
         </div>

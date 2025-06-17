@@ -1,5 +1,5 @@
 
-import { code, settings, monitor } from "lucide-react";
+import { Code, Settings, Monitor } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -15,15 +15,15 @@ const Hero = () => {
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
-              <code className="text-blue-600 mr-2" size={20} />
+              <Code className="text-blue-600 mr-2" size={20} />
               <span className="text-gray-700 font-medium">Full-Stack Development</span>
             </div>
             <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
-              <settings className="text-blue-600 mr-2" size={20} />
+              <Settings className="text-blue-600 mr-2" size={20} />
               <span className="text-gray-700 font-medium">Self-Hosted Infrastructure</span>
             </div>
             <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
-              <monitor className="text-blue-600 mr-2" size={20} />
+              <Monitor className="text-blue-600 mr-2" size={20} />
               <span className="text-gray-700 font-medium">Privacy & Autonomy</span>
             </div>
           </div>

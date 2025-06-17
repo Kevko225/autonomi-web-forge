@@ -1,12 +1,12 @@
 
-import { code, settings, monitor } from "lucide-react";
+import { Code, Settings, Monitor } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
       title: "Custom Application Development",
       description: "Full-stack web applications and desktop tools tailored to your specific needs using Python, Flask, PyQt, and modern web technologies.",
-      icon: code,
+      icon: Code,
       features: [
         "Web application development",
         "Desktop application creation",
@@ -18,7 +18,7 @@ const Services = () => {
     {
       title: "Infrastructure Consulting",
       description: "Expert guidance on building and maintaining self-hosted infrastructure with focus on privacy, security, and autonomy.",
-      icon: settings,
+      icon: Settings,
       features: [
         "Self-hosted email setup",
         "DNS server configuration",
@@ -30,7 +30,7 @@ const Services = () => {
     {
       title: "PA Equipment Rental",
       description: "Professional audio equipment rental services under '64 Network' for events, presentations, and gatherings.",
-      icon: monitor,
+      icon: Monitor,
       features: [
         "Sound system rentals",
         "Microphone & mixing equipment",

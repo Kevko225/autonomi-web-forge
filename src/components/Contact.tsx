@@ -1,5 +1,5 @@
 
-import { mail, github, link } from "lucide-react";
+import { Mail, Github, Link } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -24,7 +24,7 @@ const Contact = () => {
               <div className="space-y-6">
                 <div className="flex items-center">
                   <div className="bg-blue-100 p-3 rounded-lg mr-4">
-                    <mail className="text-blue-600" size={20} />
+                    <Mail className="text-blue-600" size={20} />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Email</h4>
@@ -34,7 +34,7 @@ const Contact = () => {
                 
                 <div className="flex items-center">
                   <div className="bg-blue-100 p-3 rounded-lg mr-4">
-                    <github className="text-blue-600" size={20} />
+                    <Github className="text-blue-600" size={20} />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">GitHub</h4>
@@ -44,7 +44,7 @@ const Contact = () => {
                 
                 <div className="flex items-center">
                   <div className="bg-blue-100 p-3 rounded-lg mr-4">
-                    <link className="text-blue-600" size={20} />
+                    <Link className="text-blue-600" size={20} />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">64 Network (PA Rental)</h4>

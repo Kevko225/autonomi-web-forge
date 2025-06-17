@@ -1,5 +1,5 @@
 
-import { user, settings, code } from "lucide-react";
+import { User, Settings, Code, Monitor } from "lucide-react";
 
 const About = () => {
   return (
@@ -34,7 +34,7 @@ const About = () => {
           <div className="space-y-6">
             <div className="bg-gray-50 p-6 rounded-lg">
               <div className="flex items-center mb-4">
-                <settings className="text-blue-600 mr-3" size={24} />
+                <Settings className="text-blue-600 mr-3" size={24} />
                 <h4 className="text-lg font-semibold text-gray-900">Infrastructure Management</h4>
               </div>
               <p className="text-gray-600">
@@ -44,7 +44,7 @@ const About = () => {
             
             <div className="bg-gray-50 p-6 rounded-lg">
               <div className="flex items-center mb-4">
-                <code className="text-blue-600 mr-3" size={24} />
+                <Code className="text-blue-600 mr-3" size={24} />
                 <h4 className="text-lg font-semibold text-gray-900">Application Development</h4>
               </div>
               <p className="text-gray-600">
@@ -54,7 +54,7 @@ const About = () => {
             
             <div className="bg-gray-50 p-6 rounded-lg">
               <div className="flex items-center mb-4">
-                <monitor className="text-blue-600 mr-3" size={24} />
+                <Monitor className="text-blue-600 mr-3" size={24} />
                 <h4 className="text-lg font-semibold text-gray-900">Decentralized Ecosystem</h4>
               </div>
               <p className="text-gray-600">
