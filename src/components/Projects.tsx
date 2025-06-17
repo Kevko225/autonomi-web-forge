@@ -34,11 +34,11 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gray-50">
+    <section id="projects" className="py-20 bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">My Projects</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">My Projects</h2>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             A showcase of my technical projects focused on autonomy, privacy, and robust infrastructure solutions.
           </p>
         </div>
@@ -47,23 +47,23 @@ const Projects = () => {
           {projects.map((project, index) => {
             const IconComponent = project.icon;
             return (
-              <div key={index} className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
+              <div key={index} className="bg-gray-900 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow border border-gray-700">
                 <div className="flex items-center mb-6">
-                  <div className="bg-blue-100 p-3 rounded-lg mr-4">
-                    <IconComponent className="text-blue-600" size={24} />
+                  <div className="bg-blue-900 p-3 rounded-lg mr-4">
+                    <IconComponent className="text-blue-400" size={24} />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900">{project.title}</h3>
+                  <h3 className="text-xl font-bold text-white">{project.title}</h3>
                 </div>
                 
-                <p className="text-gray-600 mb-6 leading-relaxed">
+                <p className="text-gray-300 mb-6 leading-relaxed">
                   {project.description}
                 </p>
                 
                 <div className="mb-6">
-                  <h4 className="text-sm font-semibold text-gray-900 mb-3">Technologies</h4>
+                  <h4 className="text-sm font-semibold text-white mb-3">Technologies</h4>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, techIndex) => (
-                      <span key={techIndex} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">
+                      <span key={techIndex} className="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-sm">
                         {tech}
                       </span>
                     ))}
@@ -71,11 +71,11 @@ const Projects = () => {
                 </div>
                 
                 <div>
-                  <h4 className="text-sm font-semibold text-gray-900 mb-3">Key Highlights</h4>
+                  <h4 className="text-sm font-semibold text-white mb-3">Key Highlights</h4>
                   <ul className="space-y-1">
                     {project.highlights.map((highlight, highlightIndex) => (
-                      <li key={highlightIndex} className="text-gray-600 text-sm flex items-center">
-                        <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
+                      <li key={highlightIndex} className="text-gray-300 text-sm flex items-center">
+                        <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></span>
                         {highlight}
                       </li>
                     ))}

@@ -3,11 +3,11 @@ import { Mail, Github, Link } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id="contact" className="py-20 bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Get In Touch</h2>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Ready to discuss your project or learn more about my services? I'd love to hear from you.
           </p>
         </div>
@@ -15,80 +15,80 @@ const Contact = () => {
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Let's Work Together</h3>
-              <p className="text-gray-600 mb-8 leading-relaxed">
+              <h3 className="text-2xl font-bold text-white mb-6">Let's Work Together</h3>
+              <p className="text-gray-300 mb-8 leading-relaxed">
                 Whether you need custom application development, infrastructure consulting, or PA equipment rental, 
                 I'm here to help. I approach every project with attention to detail and commitment to quality.
               </p>
               
               <div className="space-y-6">
                 <div className="flex items-center">
-                  <div className="bg-blue-100 p-3 rounded-lg mr-4">
-                    <Mail className="text-blue-600" size={20} />
+                  <div className="bg-blue-900 p-3 rounded-lg mr-4">
+                    <Mail className="text-blue-400" size={20} />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Email</h4>
-                    <p className="text-gray-600">contact@yourname.com</p>
+                    <h4 className="font-semibold text-white">Email</h4>
+                    <p className="text-gray-300">contact@yourname.com</p>
                   </div>
                 </div>
                 
                 <div className="flex items-center">
-                  <div className="bg-blue-100 p-3 rounded-lg mr-4">
-                    <Github className="text-blue-600" size={20} />
+                  <div className="bg-blue-900 p-3 rounded-lg mr-4">
+                    <Github className="text-blue-400" size={20} />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">GitHub</h4>
-                    <p className="text-gray-600">github.com/yourusername</p>
+                    <h4 className="font-semibold text-white">GitHub</h4>
+                    <p className="text-gray-300">github.com/yourusername</p>
                   </div>
                 </div>
                 
                 <div className="flex items-center">
-                  <div className="bg-blue-100 p-3 rounded-lg mr-4">
-                    <Link className="text-blue-600" size={20} />
+                  <div className="bg-blue-900 p-3 rounded-lg mr-4">
+                    <Link className="text-blue-400" size={20} />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">64 Network (PA Rental)</h4>
-                    <p className="text-gray-600">Professional audio equipment</p>
+                    <h4 className="font-semibold text-white">64 Network (PA Rental)</h4>
+                    <p className="text-gray-300">Professional audio equipment</p>
                   </div>
                 </div>
               </div>
             </div>
             
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <h4 className="text-xl font-bold text-gray-900 mb-6">Send a Message</h4>
+            <div className="bg-gray-900 rounded-lg shadow-lg p-8 border border-gray-700">
+              <h4 className="text-xl font-bold text-white mb-6">Send a Message</h4>
               <form className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
                     Name
                   </label>
                   <input
                     type="text"
                     id="name"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-gray-800 text-white"
                     placeholder="Your name"
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
                     Email
                   </label>
                   <input
                     type="email"
                     id="email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-gray-800 text-white"
                     placeholder="your@email.com"
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
                     Message
                   </label>
                   <textarea
                     id="message"
                     rows={5}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+                    className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none bg-gray-800 text-white"
                     placeholder="Tell me about your project..."
                   ></textarea>
                 </div>
@@ -104,8 +104,8 @@ const Contact = () => {
           </div>
         </div>
         
-        <div className="text-center mt-16 pt-8 border-t border-gray-200">
-          <p className="text-gray-600">
+        <div className="text-center mt-16 pt-8 border-t border-gray-700">
+          <p className="text-gray-300">
             © 2024 Your Name. Built with privacy and autonomy in mind.
           </p>
         </div>
