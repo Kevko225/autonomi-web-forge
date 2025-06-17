@@ -1,0 +1,98 @@
+
+import { code, settings, monitor } from "lucide-react";
+
+const Services = () => {
+  const services = [
+    {
+      title: "Custom Application Development",
+      description: "Full-stack web applications and desktop tools tailored to your specific needs using Python, Flask, PyQt, and modern web technologies.",
+      icon: code,
+      features: [
+        "Web application development",
+        "Desktop application creation",
+        "Database design & optimization",
+        "API development & integration",
+        "UI/UX design & implementation"
+      ]
+    },
+    {
+      title: "Infrastructure Consulting",
+      description: "Expert guidance on building and maintaining self-hosted infrastructure with focus on privacy, security, and autonomy.",
+      icon: settings,
+      features: [
+        "Self-hosted email setup",
+        "DNS server configuration",
+        "Network security auditing",
+        "Backup & disaster recovery",
+        "Server optimization"
+      ]
+    },
+    {
+      title: "PA Equipment Rental",
+      description: "Professional audio equipment rental services under '64 Network' for events, presentations, and gatherings.",
+      icon: monitor,
+      features: [
+        "Sound system rentals",
+        "Microphone & mixing equipment",
+        "Event audio setup",
+        "Technical support included",
+        "Competitive pricing"
+      ]
+    }
+  ];
+
+  return (
+    <section id="services" className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Services</h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Professional IT services focused on privacy, autonomy, and technical excellence.
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-3 gap-8">
+          {services.map((service, index) => {
+            const IconComponent = service.icon;
+            return (
+              <div key={index} className="bg-gray-50 rounded-lg p-8 hover:bg-gray-100 transition-colors">
+                <div className="text-center mb-6">
+                  <div className="bg-blue-100 p-4 rounded-full inline-block mb-4">
+                    <IconComponent className="text-blue-600" size={32} />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
+                
+                <ul className="space-y-3">
+                  {service.features.map((feature, featureIndex) => (
+                    <li key={featureIndex} className="text-gray-700 flex items-center">
+                      <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
+        
+        <div className="text-center mt-12">
+          <p className="text-gray-600 mb-6">
+            Interested in working together? Let's discuss your project requirements.
+          </p>
+          <button 
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg"
+          >
+            Get In Touch
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Services;
