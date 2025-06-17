@@ -1,33 +1,33 @@
 
-import { settings, code, monitor, grid-2x2 } from "lucide-react";
+import { Settings, Code, Monitor, Grid2X2 } from "lucide-react";
 
 const Projects = () => {
   const projects = [
     {
       title: "Self-Hosted Infrastructure",
       description: "Complete infrastructure stack including DNS servers, mail servers, Nextcloud file storage, Keycloak identity management, and VoIP systems.",
-      icon: settings,
+      icon: Settings,
       technologies: ["Linux", "Docker", "Nginx", "Postfix", "Bind9"],
       highlights: ["99.9% uptime", "Zero third-party dependencies", "Full data control"]
     },
     {
       title: "CTI & Maintenance Systems",
       description: "Custom Computer Telephony Integration systems and maintenance dashboards for monitoring and managing infrastructure components.",
-      icon: monitor,
+      icon: Monitor,
       technologies: ["Python", "Flask", "PostgreSQL", "WebSockets"],
       highlights: ["Real-time monitoring", "Automated alerts", "Custom reporting"]
     },
     {
       title: "Web & Desktop Applications",
       description: "Full-stack web applications and desktop tools built with Python, Flask, PyQt, and modern web technologies.",
-      icon: code,
+      icon: Code,
       technologies: ["Python", "PyQt", "Flask", "HTML/CSS/JS", "PHP"],
       highlights: ["Cross-platform", "Modern UI/UX", "Scalable architecture"]
     },
     {
       title: "Decentralized Network",
       description: "Private technology ecosystem with custom DNS zones, secure subnets, and integrated services across multiple domains.",
-      icon: grid-2x2,
+      icon: Grid2X2,
       technologies: ["DNS", "VPN", "Subnetting", "SSL/TLS", "Firewalling"],
       highlights: ["Privacy-first design", "Secure communication", "Autonomous operation"]
     }
