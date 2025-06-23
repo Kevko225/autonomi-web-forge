@@ -13,7 +13,8 @@ const Services = () => {
         "Database design & optimization",
         "API development & integration",
         "UI/UX design & implementation"
-      ]
+      ],
+      links: []
     },
     {
       title: "Infrastructure Consulting",
@@ -25,6 +26,11 @@ const Services = () => {
         "Network security auditing",
         "Backup & disaster recovery",
         "Server optimization"
+      ],
+      links: [
+        { name: "Cloud Mail Service", url: "https://mail.yourdomain.com" },
+        { name: "File Storage (Nextcloud)", url: "https://cloud.yourdomain.com" },
+        { name: "Identity Management", url: "https://auth.yourdomain.com" }
       ]
     },
     {
@@ -37,6 +43,9 @@ const Services = () => {
         "Event audio setup",
         "Technical support included",
         "Competitive pricing"
+      ],
+      links: [
+        { name: "64 Network Rentals", url: "https://64network.com" }
       ]
     }
   ];
@@ -66,7 +75,7 @@ const Services = () => {
                   </p>
                 </div>
                 
-                <ul className="space-y-3">
+                <ul className="space-y-3 mb-6">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="text-gray-300 flex items-center">
                       <span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
@@ -74,6 +83,25 @@ const Services = () => {
                     </li>
                   ))}
                 </ul>
+
+                {service.links.length > 0 && (
+                  <div className="border-t border-gray-700 pt-4">
+                    <h4 className="text-sm font-semibold text-white mb-3">Available Services:</h4>
+                    <div className="space-y-2">
+                      {service.links.map((link, linkIndex) => (
+                        <a
+                          key={linkIndex}
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block text-blue-400 hover:text-blue-300 text-sm underline transition-colors"
+                        >
+                          {link.name}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             );
           })}
